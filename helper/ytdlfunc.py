@@ -21,7 +21,7 @@ def create_buttons(quailitylist):
 
 # extract Youtube info
 def extractYt(yturl):
-    ydl = youtube_dl.YoutubeDL()
+    ydl = youtube_downloder.YouTubeDownloderBot()
     with ydl:
         qualityList = []
         r = ydl.extract_info(yturl, download=False)
